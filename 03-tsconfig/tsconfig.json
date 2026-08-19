@@ -1,0 +1,73 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist", // where the compiled file will be stored  
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node"],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    /*JavaScript Support*/
+    "allowJs": true,
+
+    // "noUnusedLocals": true, // helps you detect unused variable
+    // "noUnusedParameters": true, // helps you detect unused function parameters
+    // "noFallthroughCasesInSwitch": true // helps you detect switch cases without break or return
+
+  }
+}
+
+
+// {
+//   "target": "ES2022", // Good for modern browsers or Node.js
+//   "compilerOptions": {
+//     "esModuleInterop": true, // Ensures ESM and CJS imports work together well
+//     "skipLibCheck": true, // Ensures .d.ts files from 3rd libraries are not type-checked
+//     "target": "es2022", // Sets a relatively modern ECMAScript version as compilation target
+//     "allowJs": true, // Allows importing .js files into .ts (helpful when migrating projects)
+//     "strict": true, // Ensures strict type checking (i.e., noImplicitAny etc)
+//     "noUncheckedIndexedAccess": true, // Adds undefined as a value when accessing by index
+//     // "noImplicitOverride": true, // Enable this when working with classes & inheritance
+//     "noUnusedLocals": true, // to avoid unused variables
+//     "module": "NodeNext", // Supports both ESM & CJS modules / imports
+//     "outDir": "dist", // Store compiled files in "dist" folder
+//     "sourceMap": true, // Enables source maps for easier debugging
+//     "lib": ["es2022", "dom", "dom.iterable"] // Or without "dom" libs when building for Node
+//   }
+// }
+
+
